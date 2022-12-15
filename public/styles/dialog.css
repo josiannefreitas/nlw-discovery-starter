@@ -1,0 +1,103 @@
+dialog {
+  background-color: #0e0a14ef;
+
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 400ms;
+}
+
+dialog.hide {
+  display: none;
+}
+
+dialog .content {
+  color: white;
+
+  width: 420px;
+}
+
+dialog .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+dialog .header a {
+  background-image: url('../assets/x.svg');
+
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+
+  font-size: 0.01px;
+}
+
+dialog .header h1 {
+  color: white;
+
+  font-size: 36px;
+  line-height: 42px;
+}
+
+dialog form label {
+  font-size: 14px;
+  line-height: 16px;
+
+  display: block;
+  margin-bottom: 8px;
+}
+
+dialog form .field {
+  display: flex;
+}
+
+dialog form input {
+  flex: 1;
+
+  background-color: #f0f0f5;
+
+  border-radius: 8px 0 0 8px;
+  border: 0;
+
+  padding: 16px 24px;
+
+  font-size: 16px;
+  color: #6c6c80;
+}
+
+dialog form button {
+  width: 72px;
+  height: 72px;
+
+  background-color: var(--primary-color);
+
+  border: 0;
+  border-radius: 0 8px 8px 0;
+}
+
+dialog form button:hover {
+  background-color: #2fb85e;
+}
+
+dialog.point .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+dialog.point h1 {
+  color: white;
+  
+  margin-top: 32px;
+}
